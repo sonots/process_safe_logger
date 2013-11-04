@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Naotoshi Seo"]
   gem.email         = ["sonots@gmail.com"]
   gem.homepage      = "https://github.com/sonots/process_safe_logger"
-  gem.summary       = "Process-safe Logger supports log rotations in multi-processes safely although Ruby's original logger does not"
+  gem.summary       = "Process-safe Logger supports log rotations in multi-processes safely"
   gem.description   = gem.summary
 
   gem.files         = `git ls-files`.split($\)

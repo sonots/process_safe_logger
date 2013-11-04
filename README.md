@@ -4,13 +4,31 @@ testing ruby: 1.9.2, 1.9.3, 2.0.0;
 
 ## About Process Safe Logger
 
-Process Safe Logger supports log rotations in multi-processes *safely* although Ruby's original Logger does not.
+Process Safe Logger supports log rotations in multi-processes *safely*.
 
-## USAGE
+## Objective
+
+Ruby's standard Logger class originally have had a problem that it's log rotation function does not work safely in multi process environment. This gem fixes the problem. 
+
+The patch is already pull requested to the [githb.com:ruby/ruby](https://github.com/ruby/ruby/pull/428) and will be released with ruby 2.1.0. 
+
+## Installation
 
     gem install process_safe_logger
 
-Same with Ruby's Logger. See [ruby-doc.org:Logger](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/logger/rdoc/Logger.html). 
+## Usage
+
+```ruby
+require 'process_safe_logger'
+logger = ProcessSafeLogger.new('logfile.log', 3, 1024)
+```
+
+Option parameters are same with Ruby's Logger. See [docs.ruby-lang.org:Logger](http://docs.ruby-lang.org/en/2.0.0/Logger.html).
+
+## Further Reading
+
+1. [sonots:blog : RubyのLoggerはスレッドセーフ(＆プロセスセーフ)かどうか調べてみた](http://blog.livedoor.jp/sonots/archives/32645828.html) (Japanese)
+2. [Inter-process locking for log rotation by sonots · Pull Request #428 · ruby/ruby](https://github.com/ruby/ruby/pull/428)
 
 ## Contributing
 
@@ -20,6 +38,6 @@ Same with Ruby's Logger. See [ruby-doc.org:Logger](http://www.ruby-doc.org/stdli
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new [Pull Request](../../pull/new/master)
 
-## Copyright
+## License
 
-Copyright (c) 2013 Naotoshi Seo. See [LICENSE](LICENSE) for details.
+Same with ruby.

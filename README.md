@@ -1,6 +1,6 @@
 # Process Safe Logger [![Build Status](https://secure.travis-ci.org/sonots/process_safe_logger.png?branch=master)](http://travis-ci.org/sonots/process_safe_logger) [![Dependency Status](https://gemnasium.com/sonots/process_safe_logger.png)](https://gemnasium.com/sonots/process_safe_logger)
 
-testing ruby: 1.9.2, 1.9.3, 2.0.0;
+testing ruby: 1.9.3, 2.0.0;
 
 ## About Process Safe Logger
 

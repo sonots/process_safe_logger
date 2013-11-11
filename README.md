@@ -10,7 +10,7 @@ Process Safe Logger supports log rotations in multi-processes *safely*.
 
 Ruby's standard Logger class originally have had a problem that it's log rotation function does not work safely in multi process environment. This gem fixes the problem. 
 
-The patch is already pull requested to the [githb.com:ruby/ruby](https://github.com/ruby/ruby/pull/428) and will be released with ruby 2.1.0. 
+The patch is already pull requested to the [github.com:ruby/ruby](https://github.com/ruby/ruby/pull/428) and will be released with ruby 2.1.0. 
 
 ## Installation
 
